@@ -38,8 +38,6 @@ body {
   min-height: 100vh;
 }
 
-/* ---------- top row ---------- */
-
 .top-row {
   display: flex;
   justify-content: space-between;
@@ -49,8 +47,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--black);
 }
-
-/* ---------- hero ---------- */
 
 .hero {
   flex: 1;
@@ -80,10 +76,6 @@ body {
   user-select: none;
 }
 
-.headline span:hover {
-  transform: translateY(-0.18em);
-}
-
 .tagline {
   text-align: center;
   max-width: 640px;
@@ -91,8 +83,6 @@ body {
   line-height: 1.6;
   color: var(--black);
 }
-
-/* ---------- bottom bar ---------- */
 
 .bottom-bar {
   display: flex;
