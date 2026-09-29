@@ -175,6 +175,28 @@ body {
   outline-offset: 3px;
 }
 
+.negative-cursor {
+    position: fixed;
+    top: -75px;
+    left: -75px;
+
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 9999;
+
+    background: white;
+
+    mix-blend-mode: difference;
+
+    will-change: transform;
+
+    transform: translate3d(0, 0, 0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .headline span,
   .home-dot {
