@@ -1,4 +1,9 @@
-function Footer() {
+import { Link, NavLink } from "react-router-dom";
+import { pages } from "../data/pages";
+
+const navPages = pages.filter((p) => p.path !== "/");
+
+function Footer({ current, total }) {
     return (
         <div className="bottom-bar">
             <span className="meta">©2026</span>
@@ -10,23 +15,19 @@ function Footer() {
                 </div>
 
                 <ul className="nav-links">
-                    <li>
-                        <a href="/who.html">Who</a>
-                    </li>
-
-                    <li>
-                        <a href="/what.html">What</a>
-                    </li>
-
-                    <li>
-                        <a href="/where.html">Where</a>
-                    </li>
+                    {navPages.map((p) => (
+                        <li key={p.id}>
+                            <NavLink to={p.path}>
+                                {p.id[0].toUpperCase() + p.id.slice(1)}
+                            </NavLink>
+                        </li>
+                    ))}
                 </ul>
 
-                <a href="/" cl  assName="home-dot" aria-label="Go to homepage"></a>
+                <Link to="/" className="home-dot" aria-label="Go to homepage" />
             </nav>
 
-            <span className="meta">N°1/4</span>
+            <span className="meta">N°{current}/{total}</span>
         </div>
     );
 }

@@ -1,9 +1,9 @@
-function Header() {
+function Header({ words }) {
     return (
         <div className="top-row">
-            <span>Computer</span>
-            <span>Science</span>
-            <span>Education</span>
+            {words.map((word) => (
+                <span key={word}>{word}</span>
+            ))}
         </div>
     );
 }

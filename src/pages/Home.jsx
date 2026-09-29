@@ -1,12 +1,9 @@
-import {
-    useState,
-    useRef
-} from "react";
+import {useState, useRef} from "react";
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~`!@$%^&*()_+-={}[]|\:;<>,.?/";
 const originalText = "DZIKRA";
 
-function Hero() {
+function Home() {
     const [text, setText] = useState(originalText);
     const intervalRef = useRef(null);
 
@@ -58,4 +55,4 @@ function Hero() {
     );
 }
 
-export default Hero;
+export default Home;
