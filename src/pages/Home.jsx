@@ -1,6 +1,6 @@
 import {useState, useRef} from "react";
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890~`!@$%^&*()_+-={}[]|\:;<>,.?/";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz";
 const originalText = "DZIKRA";
 
 function Home() {
