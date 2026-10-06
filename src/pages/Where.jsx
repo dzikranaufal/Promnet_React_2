@@ -1,11 +1,11 @@
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 const socials = [
-    { label: "Medium",    href: "medium.com", className: "medium",   content: "M" },
-    { label: "GitHub",    href: "github.com/dzikranaufal", content: <FaGithub /> },
-    { label: "Email",     href: "dzikranaufalbaihaqi@gmail.com", className: "at",       content: "@" },
-    { label: "Instagram", href: "instagram.com/jikurooo", content: <FaInstagram /> },
-    { label: "LinkedIn",  href: "linkedin.com", className: "linkedin", content: <FaLinkedinIn /> },
+    { label: "Medium",    href: "https://medium.com", className: "medium",   content: "M" },
+    { label: "GitHub",    href: "https://github.com/dzikranaufal", content: <FaGithub /> },
+    { label: "Email",     href: "https://dzikranaufalbaihaqi@gmail.com", className: "at",       content: "@" },
+    { label: "Instagram", href: "https://instagram.com/jikurooo", content: <FaInstagram /> },
+    { label: "LinkedIn",  href: "https://linkedin.com", className: "linkedin", content: <FaLinkedinIn /> },
 ];
 
 function Where() {
